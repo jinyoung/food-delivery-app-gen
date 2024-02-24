@@ -2,17 +2,15 @@ version: "3"
 
 services:
 
- 
-  generate-order-management:
-    tty: true
-    stdin_open: true
-    environment:
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
-    image: ghcr.io/jinyoung/gpt-engineer:v5
-#    command: ["-sh"]
-    volumes:
-      - ../order-management:/project
-#   generate-delivery-management:
+  # generate-restraunt-management:
+  #   tty: true
+  #   stdin_open: true
+  #   environment:
+  #     - OPENAI_API_KEY=${OPENAI_API_KEY}
+  #   image: ghcr.io/jinyoung/gpt-engineer:v5
+  #   volumes:
+  #     - ../restaurant-management:/project
+#   generate-order-management:
 #     tty: true
 #     stdin_open: true
 #     environment:
@@ -20,8 +18,17 @@ services:
 #     image: ghcr.io/jinyoung/gpt-engineer:v5
 # #    command: ["-sh"]
 #     volumes:
-#       - ../delivery-management:/project
-#   generate-payment-management:
+#       - ../order-management:/project
+  generate-delivery-management:
+    tty: true
+    stdin_open: true
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    image: ghcr.io/jinyoung/gpt-engineer:v5
+#    command: ["-sh"]
+    volumes:
+      - ../delivery-management:/project
+#  generate-payment-management:
 #     tty: true
 #     stdin_open: true
 #     environment:

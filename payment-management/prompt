@@ -5,14 +5,9 @@ Please implement for this Event Storming Model:
 
 I want to utilize following techniques:
 
-- clean architecture
-- spring-boot3
-- spring-data-rest
-- JPA (must use package jakarta.persistence.* instead of javax.persistence.*)
+- JSP and JDBC Prepared Statement only.
 - H2 DB
-- Lombok
-- Kafka with spring-cloud-streams library 
-- JUnit Test
+- DO NOT create any Java classes like DTO or Services. Put the all the logics into JSP pages. 
 
 
 SELF-CRITICISM: 

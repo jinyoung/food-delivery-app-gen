@@ -1,0 +1,4 @@
+```sh
+composer install
+php index.php
+```
